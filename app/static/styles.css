@@ -205,37 +205,51 @@ html, body {
 
 .map-section h2 {
     color: #f8f9fa};
-    /* Container for flash messages */
+/* Container for flash messages */
 .flash-messages {
     margin-top: 1rem;
+    color: #c3e6cb;
+    stroke: #000;
+    font-size: large;
+    font-weight: bolders;
+}
+
+/* Alert base styling */
+.alert {
+    border-radius: 0.25rem; /* Rounded corners */
+    border: 2px solid transparent; /* Solid border with transparent color initially */
+    padding: 1rem; /* Padding inside the alert box */
+    position: relative; /* Position for close button */
+    margin-bottom: 1rem; /* Margin between alerts */
+    color : white; /* Text color */
 }
 
 /* Success alert styling */
 .alert-success {
     background-color: #d4edda;
     color: #155724;
-    border-color: #c3e6cb;
+    border-color: #c3e6cb; /* Solid border color */
 }
 
 /* Error alert styling */
 .alert-error {
     background-color: #f8d7da;
     color: #721c24;
-    border-color: #f5c6cb;
+    border-color: #f5c6cb; /* Solid border color */
 }
 
 /* Warning alert styling */
 .alert-warning {
     background-color: #fff3cd;
     color: #856404;
-    border-color: #ffeeba;
+    border-color: #ffeeba; /* Solid border color */
 }
 
 /* Info alert styling */
 .alert-info {
     background-color: #d1ecf1;
     color: #0c5460;
-    border-color: #bee5eb;
+    border-color: #bee5eb; /* Solid border color */
 }
 
 /* Close button styling */
@@ -245,4 +259,8 @@ html, body {
     right: 0;
     padding: 0.75rem 1.25rem;
     color: inherit;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
