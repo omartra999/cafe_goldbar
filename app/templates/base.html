@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cafe, Kaffee, Goldbar, Bar, Essen, Cocktails">
+    <title>Cafe Goldbar in Essen</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background-container">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+        <div class="box six"></div>
+        <div class="box seven"></div>
+        <div class="box eight"></div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='logo_gold_bar.gif') }}" width="160" height="80" class="d-inline-block align-top" alt="Cafe Goldbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#News">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Menu">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container mt-4">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer text-dark text-center py-3 mt-4">
+        <p>&copy; Impressum: Patrick Sokoll, Rellinghauser Str 110, 45128 Essen, Telefon 0201-7502090, E-Mail: <a href="mailto:goldbooking@gmx.de">goldbooking@gmx.de</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
